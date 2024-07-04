@@ -1,0 +1,154 @@
+//>>>>> Component Button Here <<<<<//
+.theme-btn {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: $theme-color;
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 21.5px 45px;
+    min-width: 170px;
+    border-radius: 30px;
+
+    i {
+        margin-left: 5px;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        background-color: $header-color;
+        z-index: -1;
+        transition: all 0.4s ease-out;
+        border-radius: inherit;
+    }
+
+    &:hover {
+        color: $white;
+        box-shadow: none;
+
+        &::before {
+            width: 100%;
+        }
+    }
+
+    &.transparent-btn {
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        padding: 19.5px 45px;
+
+        &::before {
+            background-color: $theme-color;
+        }
+
+        &:hover {
+            border: 2px solid transparent;
+        }
+    }
+
+    &.bg-black {
+        background-color: $header-color;
+
+        &::before {
+            background-color: $theme-color;
+        }
+    }
+
+    &.transparent-btn-2 {
+        background-color: transparent;
+        border: 2px solid $border-color;
+        padding: 19.5px 45px;
+        color: $text-color;
+
+        &::before {
+            background-color: $theme-color;
+        }
+
+        &:hover {
+            border: 2px solid transparent;
+            color: $white;
+        }
+    }
+
+
+    @include breakpoint (max-md){
+        padding: 20px 32px;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 18px 30px;
+        font-size: 14px;
+    }
+}
+
+.link-btn {
+    text-transform: capitalize;
+    color: $header-color;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 16px;
+
+    i {
+        margin-left: 8px;
+    }
+
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+.arrow-btn {
+    font-size: 16px;
+    position: relative;
+    transform: translateX(0);
+    transition: 0.7s;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    color: $theme-color;
+    text-decoration: underline;
+
+    i {
+        font-size: 18px;
+        transform: rotate(-40deg);
+    }
+
+
+    &::before {
+        position: absolute;
+        content: "Read More";
+        font-weight: 700;
+        color: $theme-color;
+        font-size: 16px;
+        left: -95px;
+        top: -2px;
+        @include transition;
+        opacity: 0;
+    }
+
+    &:hover {
+        transform: translateX(95px);
+        color: $theme-color;
+
+        i {
+            transform: rotate(0);
+        }
+
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+//>>>>> Component Button End <<<<<//

@@ -1,0 +1,33 @@
+.brand-image {
+    padding: 30px 40px;
+    transition: all .3s ease-in-out;
+
+    img {
+        filter: grayscale(1);
+        transition: all .3s;
+    }
+
+    &:hover, &.active {
+        box-shadow: 0px 16px 32px 0px rgba(183, 186, 187, 0.2);
+        background-color: #fff;
+        
+        img {
+            filter: grayscale(0);
+        }
+    }
+}
+
+.title-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+    
+    p {
+        display: inline-block;
+        padding: 13px 58px;
+        font-weight: 700;
+        color: $white;
+        background-color: $theme-color-2;
+        text-transform: capitalize;
+        border-radius: 30px;
+    }
+}

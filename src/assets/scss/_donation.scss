@@ -1,0 +1,201 @@
+.donation-card-items {
+    border: 2px solid $border-color;
+    padding: 50px;
+
+    @include breakpoint (max-md){
+        padding: 40px;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 30px;
+    }
+
+    .content {
+        margin-top: 20px;
+
+        h3 {
+            margin-bottom: 5px;
+
+            a {
+                &:hover {
+                    color: $theme-color-2;
+                }
+            }
+        }
+
+        .donation-btn {
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 700;
+            color: $header-color;
+            display: block;
+            margin-top: 25px;
+
+            i {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #f2f2f2;
+                border-radius: 50%;
+                width: 64px;
+                height: 64px;
+                line-height: 62px;
+                text-align: center;
+                color: #202426;
+                margin-right: 10px;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+
+            &:hover {
+                color: $theme-color-2;
+                
+                i {
+                    color: $theme-color-2;
+                    border-color: $theme-color-2;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+.donation-section-2 {
+    position: relative;
+    background-color: #202426;
+    position: relative;
+
+    .donation-image {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        @include breakpoint (max-xxxl){
+            width: 650px;
+            top: 0;
+
+            img {
+                @include imgw;
+                object-fit: cover;
+            }
+        }
+
+        @include breakpoint (max-xxl){
+            width: 550px;
+
+        }
+
+        @include breakpoint (max-xl){
+            width: 500px;
+        }
+
+        @include breakpoint (max-lg){
+            position: static;
+            margin-bottom: 50px;
+            top: 0;
+            bottom: initial;
+            right: 0;
+            width: initial;
+
+            img {
+                @include imgw;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.donation-content-area {
+    margin-left: 100px;
+
+    @include breakpoint (max-lg){
+        margin-left: 0;
+    }
+
+    .section-title {
+        h2 {
+            font-size: 50px;
+
+            @include breakpoint (max-xl){
+                font-size: 44px;
+            }
+
+            @include breakpoint (max-md){
+                font-size: 38px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 32px;
+            }
+        }
+    }
+
+    .donate-amount {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .amount-btn {
+            color: $text-color;
+            padding: 14px 30px;
+            background-color: #2b2e30;
+            @include transition;
+
+            &.active {
+                background-color: $theme-color-2;
+                color: $white;
+            }
+        }
+    }
+
+    .donate-now {
+        display: flex;
+        gap: 20px;
+
+        input {
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #2b2e30;
+            color: $white;
+            max-width: 200px;
+            border: none;
+            outline: none;
+        }
+
+        .theme-btn {
+            border-radius: 0;
+            background-color: $theme-color-2;
+            text-transform: capitalize;
+
+            &::before {
+                background-color: $theme-color-3;
+            }
+        }
+    }
+}
+
+.donate-now-section {
+    background-color: #f86048;
+}
+
+.give-donate-form-wrap 
+.give-donation-level-btn {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff9382;
+    background-color: #f86048;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 30px;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
