@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/img/logo/logo1.png';
 
 const Footer = () => {
   return (
@@ -9,6 +10,7 @@ const Footer = () => {
             <div className="col-md-6 col-xl-4 col-12 wow fadeInUp" data-wow-delay=".3s">
               <div className="single-footer-widget">
                 <div className="widget-head">
+                  <img src={logo} alt="logo-img" />
                   <h4 className="text-white">Get In Touch</h4>
                 </div>
                 <div className="footer-content">
