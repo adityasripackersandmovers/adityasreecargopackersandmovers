@@ -9,7 +9,14 @@ import MiniFooter from './components/MiniFooter'
 import Error from './components/Error'
 
 import Hero from './components/Hero'
-
+import PromoSection from './components/PromoSection'
+import About from './components/About'
+import Counter from './components/Counter'
+import Feature from './components/Feature'
+import Team from './components/Team'
+import Faq from './components/Faq'
+import Testimonials from './components/Testimonials'
+import Map from './components/Map'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,6 +36,14 @@ function App() {
           <MinNavbar />
           <Header />
           <Hero />
+          <PromoSection />
+          <About />
+          <Counter />
+          <Feature />
+          <Team />
+          <Faq />
+          <Testimonials />
+          <Map />
           <Footer />
           <MiniFooter />
           {/* Other components go here */}

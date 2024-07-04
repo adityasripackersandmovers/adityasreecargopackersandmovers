@@ -35,7 +35,24 @@ Version: 1.1.0
 Main Style file-> assets/css/main.css 
 */
 
+.formtext{
+    color: white;
+}
+.formtextbox{
+    width: 300px !important;
+    color: #f2f2f2 !important;
+}
 
+
+@media (min-width:800px) { 
+    .formtext{
+        color: white;
+    }
+    .formtextbox{
+        max-width: 300px !important;
+        color: #f2f2f2 !important;
+    }
+}
 
 
 
