@@ -1,11 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import './App.css'
-import Header from './components/Header'
-import MinNavbar from './components/MinNavbar'
 import Preloader from './components/Preloader'
-
-import Footer from './components/Footer'
-import MiniFooter from './components/MiniFooter'
 import Error from './components/Error'
 
 import Hero from './components/Hero'
@@ -33,8 +28,6 @@ function App() {
     <div className="App">
       {loading ? <Preloader /> : (
         <>
-          <MinNavbar />
-          <Header />
           <Hero />
           <PromoSection />
           <About />
@@ -44,8 +37,6 @@ function App() {
           <Faq />
           <Testimonials />
           <Map />
-          <Footer />
-          <MiniFooter />
           {/* Other components go here */}
         </>
       )}

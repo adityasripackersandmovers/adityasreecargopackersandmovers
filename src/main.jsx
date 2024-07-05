@@ -1,7 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import { createRoot } from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import App from './App.jsx';
+import './index.css';
 
 import './assets/css/bootstrap.min.css'
 import './assets/css/font-awesome.css'
@@ -13,9 +14,24 @@ import './assets/css/nice-select.css'
 import './assets/css/main.css'
 import './assets/css/style.css'
 
+import Layout from './layouts/Layout.jsx';
+import Home from './pages/Homepage.jsx';
+import About from './pages/Aboutpage.jsx';
+import Services from './pages/Servicespage.jsx';
+import Contact from './pages/Contactpage.jsx';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(
+  <Router>
+    <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/about.html" element={<About />} />
+          <Route path="/services.html" element={<Services />} />
+          <Route path="/contact.html" element={<Contact />} />
+        </Route>
+    </Routes>
+  </Router>
+);

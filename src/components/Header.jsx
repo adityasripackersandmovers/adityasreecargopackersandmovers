@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/img/logo/black-logo.png';
+import logo from '../assets/img/logo/logo1.png';
 import home1 from '../assets/img/header/home-1.jpg';
 import home2 from '../assets/img/header/home-2.jpg';
 import home3 from '../assets/img/header/home-3.jpg';
@@ -21,6 +21,7 @@ const Header = () => {
                 <div className="main-menu">
                   <nav id="mobile-menu">
                     <ul>
+                      {/* 
                       <li className="has-dropdown active menu-thumb">
                         <a href="index.html">
                           Home
@@ -104,6 +105,10 @@ const Header = () => {
                           <li><a href="index-3.html">Home 03</a></li>
                           <li><a href="index-4.html">Home 04</a></li>
                         </ul>
+                      </li>
+                      */}
+                      <li>
+                        <a href="/">Home</a>
                       </li>
                       <li>
                         <a href="about.html">About</a>
