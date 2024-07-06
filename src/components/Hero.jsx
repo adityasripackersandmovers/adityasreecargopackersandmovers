@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from 'react'
+import heroimg from '../assets/img/hero/hero-a.png'
 
 const Hero = () => {
   const [result, setResult] = React.useState("");
@@ -28,7 +29,7 @@ const Hero = () => {
 
   return (
     <section className="hero-section hero-1 style-hero-3">
-      <div className="hero-image bg-cover" style={{ backgroundImage: "url('assets/img/hero/hero-8.jpg')" }}></div>
+      <div className="hero-image bg-cover" style={{ backgroundImage: `url(${heroimg})` }}></div>
       <div className="container">
         <div className="row g-4 align-items-center justify-content-between">
           <div className="col-xl-7 col-lg-6">

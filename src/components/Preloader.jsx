@@ -26,7 +26,7 @@ const Preloader = () => {
             A
           </span>
         </div>
-        <p className="text-center">Sree Cargo <br/> Packers and Movers</p>
+        <p className="text-center">Sri Cargo <br/> Packers and Movers</p>
         <p className="text-center">Loading</p>
       </div>
       <div className="loader">

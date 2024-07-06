@@ -12,6 +12,9 @@ import Team from './components/Team'
 import Faq from './components/Faq'
 import Testimonials from './components/Testimonials'
 import Map from './components/Map'
+import Services from './components/Services'
+import ServiceAreas from './components/ServiceAreas'
+import ServicesList from './components/ServicesList'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,10 +34,13 @@ function App() {
           <Hero />
           <PromoSection />
           <About />
+          <Services />
           <Counter />
           <Feature />
           <Team />
           <Faq />
+          <ServiceAreas />
+          <ServicesList />
           <Testimonials />
           <Map />
           {/* Other components go here */}
