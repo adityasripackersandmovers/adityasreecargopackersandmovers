@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHandsHelping } from 'react-icons/fa';
-import truck from '../assets/img/childboy.jpg'
+import truck from '../assets/img/feature1.jpg'
 
 const Feature = () => {
   return (
