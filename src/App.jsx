@@ -12,6 +12,7 @@ import Team from './components/Team'
 import Faq from './components/Faq'
 import Testimonials from './components/Testimonials'
 import Map from './components/Map'
+import Services from './components/Services'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function App() {
           <Hero />
           <PromoSection />
           <About />
+          <Services />
           <Counter />
           <Feature />
           <Team />
