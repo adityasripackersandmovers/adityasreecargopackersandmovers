@@ -1,0 +1,219 @@
+.faq-content {
+    margin-right: 40px;
+
+    @include breakpoint (max-lg){
+        margin-right: 0;
+    }
+    
+    .accordion-item {
+        border: 0;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: $bg-color;
+       // box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.06);
+        .accordion-header { 
+        
+            .accordion-button { 
+                font-weight: 500;
+                color: $header-color;
+                letter-spacing: -.2px;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                background-color: transparent;
+                padding: 26px 40px;
+                font-size: 18px;
+
+                &::after {
+                    content: "\f067";
+                    background: transparent;
+                    font-family: $fa;
+                    font-weight: 300;
+                    transition: all 0.3s ease-in-out !important;
+                }
+                &:not(.collapsed)::after {
+                    content: "\f068";
+                    background: transparent;
+                    font-family: $fa;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .accordion-collapse { 
+
+            .accordion-body {
+                padding-right: 50px;
+                padding-top: 5px;
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+.faq-image-items {
+    position: relative;
+
+    .faq-image {
+        height: 305px;
+
+        img {
+            @include imgw;
+            object-fit: cover;
+        }
+    }
+
+    .counter-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 50px 40px;
+        background-color: $theme-color;
+        text-align: center;
+        z-index: 9999;
+        
+        h2 {
+            color: $white;
+            font-size: 16px;
+            line-height: 1;
+
+            span {
+                font-size: 60px;
+            }
+        }
+
+        p {
+            color: $white;
+            margin-top: 5px;
+        }
+    }
+}
+
+.faq-image-items-2 {
+    max-width: 500px;
+    position: relative;
+    margin-left: 80px;
+
+    @include breakpoint (max-lg){
+        margin-left: 0;
+    }
+
+    .faq-img {
+        @include imgw;
+        clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+    }
+
+    .faq-image-2 {
+        position: absolute;
+        top: -40px;
+        right: -27%;
+
+        @include breakpoint (max-xxxl){
+            right: 0%;
+            max-width: 210px;
+        }
+
+        @include breakpoint (max-lg){
+            top: 0;
+            right: 0;
+        }
+
+        @include breakpoint (max-lg){
+            max-width: 200px;
+        }
+
+        @include breakpoint (max-sm){
+            right: 10px;
+            max-width: 150px;
+        }
+
+        img {
+            border-radius: 20px;
+            border: 10px solid $white;
+            box-shadow: $shadow;
+            @include imgw;
+        }
+    }
+
+    .faq-image-3 {
+        position: absolute;
+        bottom: -10%;
+        left: -20%;
+
+        @include breakpoint (max-lg){
+           bottom: 0;
+           left: 0;
+        }
+
+        @include breakpoint (max-sm){
+            bottom: 0;
+            left: 0;
+            max-width: 130px;
+        }
+
+        img {
+            @include imgw;
+            border-radius: 20px;
+            border: 10px solid $white;
+            box-shadow: $shadow;
+        }
+    }
+}
+
+.faq-wrapper {
+    margin-top: 32px;
+    margin-bottom: 55px;
+}
+
+.single-faq-card {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 60px 45px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    &::before {
+        @include before;
+        background: #000;
+        opacity: .6;
+        z-index: -1;
+    }
+
+    .icon {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        margin: 0 auto;
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #b1b5b7;
+    }
+
+    a {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 auto;
+        display: inline-block;
+        background-color: #1A685B;
+        border-radius: 50%;
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+}

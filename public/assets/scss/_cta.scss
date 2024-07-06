@@ -1,0 +1,316 @@
+.cta-video-wrapper {
+    @include flex;
+    justify-content: space-between;
+
+    .video-play-btn {
+        .video-btn {
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: $theme-color-2;
+            display: inline-block;
+            color: $white;
+
+            @include breakpoint (max-md){
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+            }
+
+            @include breakpoint (max-sm){
+                width: 75px;
+                height: 75px;
+                line-height: 75px;
+            }
+        }
+
+        .ripple {
+            &::before,&::after {
+                width: 120px;
+                height: 120px;
+
+                @include breakpoint (max-md){
+                    width: 80px;
+                    height: 80px;
+                }
+
+                @include breakpoint (max-sm){
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+        }
+
+        .video-text {
+            color: $white;
+            margin-left: 30px;
+        }
+    }
+
+    @include breakpoint (max-lg){
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.cta-subscribe-form {
+    .form-clt {
+        position: relative;
+
+        input {
+            outline: none;
+            border: none;
+            width: 100%;
+            font-size: 14px;
+            background-color: #272c2e;
+            padding: 18px 40px 18px 60px;
+            color: $text-color;
+        }
+
+        .icon {
+            position: absolute;
+            left: 30px;
+            top: 17px;
+            color: $theme-color-3;
+        }
+
+        .theme-btn {
+            font-size: 14px;
+            border-radius: 0;
+            padding: 23.5px 25px;
+            font-weight: 500;
+            @include transition;
+
+            &::before {
+                background-color: $white;
+            }
+
+            &:hover {
+                color: $header-color;
+            }
+        }
+    }
+}
+
+.cta-video-section-2 {
+    position: relative;
+    z-index: 9;
+
+    &::before {
+        @include before;
+        background: #202426;
+        opacity: .7;
+        z-index: -1;
+    }
+}
+
+.gallery-section {
+    .container-fluid {
+        padding: 0 125px;
+
+        @include breakpoint (max-xxxl){
+            padding: 0 50px;
+        }
+
+        @include breakpoint (max-xl){
+            padding: 0 30px;
+        }
+    }
+}
+
+.gallery-wrappper {
+    @include flex;
+    gap: 30px;
+
+    @include breakpoint (max-xl){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-image {
+        position: relative;
+
+        &::before {
+            @include before;
+            background-color: $theme-color-2;
+            opacity: 0;
+            visibility: hidden;
+            @include transition;
+        }
+
+        img {
+            @include imgw;
+        }
+
+        .gallery-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: $white;
+            opacity: 0;
+            visibility: hidden;
+            @include transition;
+
+            h4 {
+                color: $white;
+            }
+
+            i {
+                font-size: 28px;
+            }
+        }
+
+        &:hover {
+            &::before {
+                opacity: .8;
+                visibility: visible;
+             }
+ 
+             .gallery-content {
+                 opacity: 1;
+                 visibility: visible;
+             }
+        }
+    }
+}
+
+.cta-banner {
+    position: relative;
+    z-index: 9;
+
+    &::before {
+        @include before;
+        background-color: $bg-color;
+        z-index: -1;
+        height: 50%;
+    }
+}
+
+.cta-banner-wrapper {
+    position: relative;
+    z-index: 9;
+
+    @include breakpoint (max-lg){
+        justify-content: center;
+        text-align: center;
+        padding: 80px 40px;
+    }
+
+    &::before {
+        @include before;
+        opacity: .4;
+        background-color: #202426;
+    }
+
+    .button-items {
+        @include flex;
+        gap: 20px;
+
+        @include breakpoint (max-lg){
+           justify-content: center;
+        }
+
+        @include breakpoint (max-xxs){
+            flex-wrap: wrap;
+        }
+
+        .theme-btn {
+            border-radius: 0;
+            background-color: $theme-color-3;
+
+            i {
+                margin-right: 10px;
+            }
+
+            &.transparent-btn {
+                background-color: transparent;
+                border: 2px solid $white;
+
+                &:hover {
+                    border: 2px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+.cta-banner-section-3 {
+    background-color: $theme-color-2
+}
+
+.cta-banner-wrapper-3 {
+    @include flex;
+    width: 100%;
+    justify-content: space-between;
+
+    @include breakpoint (max-lg){
+       flex-wrap: wrap;
+       gap: 30px;
+    }
+
+    .newsletter-items {
+       width: 50%;
+
+       @include breakpoint (max-lg){
+            width: 100%;
+        }
+       
+        .form-clt {
+            position: relative;
+
+            input {
+                    position: relative;
+                    padding: 22px 30px;
+                    border: none;
+                    outline: none;
+                    background-color: $white;
+                    border: none;
+                    width: 100%;
+                    font-size: 16px;
+                    color: $text-color;
+                    border-radius: 5px;
+
+                    @include breakpoint (max-md){
+                        padding: 14px 30px;
+                    }
+
+                    @include breakpoint (max-sm){
+                        padding: 14px 25px;
+                    }
+
+                    &::placeholder {
+                        color: $text-color;
+                    }
+            }
+
+            .theme-btn {
+                padding: 20px 30px;
+                position: absolute;
+                top: 8px;
+                right: 7px;
+                background-color: $theme-color-2;
+    
+                @include breakpoint (max-xl){
+                    width: initial;
+                }
+    
+                @include breakpoint (max-md){
+                    width: initial;
+                    padding: 20px 30px;
+                    top: 3px;
+                    right: 3px;
+                }
+    
+                @include breakpoint (max-sm){
+                    padding: 18px 25px;
+                }
+            }
+        }
+    }
+}
