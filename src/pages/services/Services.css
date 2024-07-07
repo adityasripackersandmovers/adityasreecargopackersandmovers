@@ -66,6 +66,9 @@
   .theme-btn:hover {
     background-color: #0056b3;
   }
+  .city-service{
+    padding: 5%;
+  }
   
   /* Mobile Responsive */
   @media (max-width: 767px) {

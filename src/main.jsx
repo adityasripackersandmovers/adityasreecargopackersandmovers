@@ -34,34 +34,144 @@ import UnloadingServices from './pages/services/UnloadingServices.jsx';
 import UnpackingServices from './pages/services/UnpackingServices.jsx';
 import VehicleTransport from './pages/services/VehicleTransport.jsx';
 
+import CityService from './components/CityService';
+import cities from './data/cities';
+
+import Packersandmovers from './pages/SEO/Packersandmovers.jsx';
+import Packersandmoversnearme from './pages/SEO/Packersandmoversnearme.jsx';
+import Localpackersandmovers from './pages/SEO/Localpackersandmovers.jsx';
+import Localpackersandmoversin from './pages/SEO/Localpackersandmoversin.jsx';
+import Professionalpackersandmovers from './pages/SEO/Professionalpackersandmovers.jsx';
+import Professionalpackersandmoversin from './pages/SEO/Professionalpackersandmoversin.jsx';
+import Bestpackersandmovers from './pages/SEO/Bestpackersandmovers.jsx';
+import Bestpackersandmoversin from './pages/SEO/Bestpackersandmoversin.jsx';
+
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
   <Router>
-    <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about.html" element={<About />} />
-          <Route path="/services.html" element={<Services />} />
-          <Route path="/why-us.html" element={<Whyuspage />} />
-          <Route path="/contact.html" element={<Contact />} />
-          <Route path="/team.html" element={<Teampage />} />
-          <Route path="/faq.html" element={<FaqPage />} />
-          <Route path ="/residential-moving.html" element ={<ResidentialMoving/>} />
-          <Route path ="/commercial-moving.html" element ={<CommercialMoving/>} />
-          <Route path ="/transport-services.html" element ={<TransportServices/>} />
-          <Route path ="/residential-moving.html" element ={<ResidentialMoving/>} />
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="/about.html" element={<About />} />
+      <Route path="/services.html" element={<Services />} />
+      <Route path="/why-us.html" element={<Whyuspage />} />
+      <Route path="/contact.html" element={<Contact />} />
+      <Route path="/team.html" element={<Teampage />} />
+      <Route path="/faq.html" element={<FaqPage />} />
+      <Route path="/residential-moving.html" element={<ResidentialMoving />} />
+      <Route path="/commercial-moving.html" element={<CommercialMoving />} />
+      <Route path="/transport-services.html" element={<TransportServices />} />
+      <Route path="/furniture-assembly.html" element={<FurnitureAssembly />} />
+      <Route path="/loading-services.html" element={<LoadingServices />} />
+      <Route path="/packing-services.html" element={<PackingServices />} />
+      <Route path="/specialty-moves.html" element={<SpecialtyMoves />} />
+      <Route path="/unloading-services.html" element={<UnloadingServices />} />
+      <Route path="/unpacking-services.html" element={<UnpackingServices />} />
+      <Route path="/vehicle-transport.html" element={<VehicleTransport />} />
 
-          <Route path ="/furniture-assembly.html" element ={<FurnitureAssembly/>} />
-          <Route path ="/loading-services.html" element ={<LoadingServices/>} />
-          <Route path ="/packing-services.html" element ={<PackingServices/>} />
-          <Route path ="/specialty-moves.html" element ={<SpecialtyMoves/>} />
-          <Route path ="/unloading-services.html" element ={<UnloadingServices/>} />
-          <Route path ="/unpacking-services.html" element ={<UnpackingServices/>} />
-          <Route path ="/vehicle-transport.html" element ={<VehicleTransport/>} />
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/packers-and-movers-in-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<CityService city={city} />}
+          />
+        );
+      })}
 
-        </Route>
-    </Routes>
-  </Router>
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/packers-and-movers-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Packersandmovers city={city} />}
+          />
+        );
+      })}
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/packers-and-movers-nearme-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Packersandmoversnearme city={city} />}
+          />
+        );
+      })}
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/local-packers-and-movers-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Localpackersandmovers city={city} />}
+          />
+        );
+      })}
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/local-packers-and-movers-in-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Localpackersandmoversin city={city} />}
+          />
+        );
+      })}
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/professional-packers-and-movers-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Professionalpackersandmovers city={city} />}
+          />
+        );
+      })}
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/professional-packers-and-movers-in-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Professionalpackersandmoversin city={city} />}
+          />
+        );
+      })}
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/best-packers-and-movers-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Bestpackersandmovers city={city} />}
+          />
+        );
+      })}
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/best-packers-and-movers-in-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Bestpackersandmoversin city={city} />}
+          />
+        );
+      })}
+    </Route>
+  </Routes>
+</Router>
 );
