@@ -1,2 +1,6 @@
 1. Why to choose us drop down is not working 
 2. Testimonial swiper is not working
+3. Create scroller to top 
+4. add whatsapp for chat and message
+5. Add meta open graph properties 
+6. Ask user to add Review component 
