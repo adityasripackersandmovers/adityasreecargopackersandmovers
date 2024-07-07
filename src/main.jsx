@@ -20,6 +20,19 @@ import Home from './pages/Homepage.jsx';
 import About from './pages/Aboutpage.jsx';
 import Services from './pages/Servicespage.jsx';
 import Contact from './pages/Contactpage.jsx';
+import Whyuspage from './pages/Whyuspage.jsx';
+import Teampage from './pages/Teampage.jsx';
+import FaqPage from './pages/Faqpage.jsx';
+import ResidentialMoving from './pages/ResidentialMoving/ResidentialMoving.jsx';
+import CommercialMoving from './pages/CommercialMoving/CommercialMoving.jsx';
+import TransportServices from './pages/TransportServices/TransportServices.jsx';
+import FurnitureAssembly from './pages/services/FurnitureAssembly.jsx';
+import LoadingServices from './pages/services/LoadingServices.jsx';
+import PackingServices from './pages/services/PackingServices.jsx';
+import SpecialtyMoves from './pages/services/SpecialtyMoves.jsx';
+import UnloadingServices from './pages/services/UnloadingServices.jsx';
+import UnpackingServices from './pages/services/UnpackingServices.jsx';
+import VehicleTransport from './pages/services/VehicleTransport.jsx';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -31,7 +44,23 @@ root.render(
           <Route index element={<Home />} />
           <Route path="/about.html" element={<About />} />
           <Route path="/services.html" element={<Services />} />
+          <Route path="/why-us.html" element={<Whyuspage />} />
           <Route path="/contact.html" element={<Contact />} />
+          <Route path="/team.html" element={<Teampage />} />
+          <Route path="/faq.html" element={<FaqPage />} />
+          <Route path ="/residential-moving.html" element ={<ResidentialMoving/>} />
+          <Route path ="/commercial-moving.html" element ={<CommercialMoving/>} />
+          <Route path ="/transport-services.html" element ={<TransportServices/>} />
+          <Route path ="/residential-moving.html" element ={<ResidentialMoving/>} />
+
+          <Route path ="/furniture-assembly.html" element ={<FurnitureAssembly/>} />
+          <Route path ="/loading-services.html" element ={<LoadingServices/>} />
+          <Route path ="/packing-services.html" element ={<PackingServices/>} />
+          <Route path ="/specialty-moves.html" element ={<SpecialtyMoves/>} />
+          <Route path ="/unloading-services.html" element ={<UnloadingServices/>} />
+          <Route path ="/unpacking-services.html" element ={<UnpackingServices/>} />
+          <Route path ="/vehicle-transport.html" element ={<VehicleTransport/>} />
+
         </Route>
     </Routes>
   </Router>

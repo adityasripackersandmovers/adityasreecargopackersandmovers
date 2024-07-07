@@ -1,11 +1,14 @@
 import React from 'react'
-import Servicescmp from '../components/Team'
+import Servicescmp from '../components/Services'
+import ServiceAreas from '../components/ServiceAreas'
+import ServicesList from '../components/ServicesList'
 
 const Servicespage = () => {
   return (
     <div>
-      <p> Services Pages</p>
       <Servicescmp />
+      <ServiceAreas />
+      <ServicesList />
     </div>
   )
 }

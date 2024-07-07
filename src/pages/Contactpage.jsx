@@ -1,10 +1,11 @@
 import React from 'react'
 import Contact from '../components/About'
+import Map from '../components/Map'
 const Contactpage = () => {
   return (
     <div>
-      <p> Contact Page</p>
       <Contact />
+      <Map />
     </div>
   )
 }

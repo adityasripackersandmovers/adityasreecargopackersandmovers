@@ -68,8 +68,10 @@ const Footer = () => {
                   <ul>
                     <li><a href="about.html">about</a></li>
                     <li><a href="faq.html">faq</a></li>
+                    {/* 
                     <li><a href="events.html">events</a></li>
                     <li><a href="event-details.html">event details</a></li>
+                    */}
                     <li><a href="team.html">Team</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                   </ul>
@@ -78,8 +80,8 @@ const Footer = () => {
                   <ul>
                     <li><a href="residential-moving.html">Residential Moving</a></li>
                     <li><a href="commercial-moving.html">Commercial Moving</a></li>
-                    <li><a href="storage.html">Storage Solutions</a></li>
-                    <li><a href="quote.html">Get A Quote</a></li>
+                    <li><a href="/transport-services.html">Transport Services</a></li>
+                    <li><a href="contact.html">Get A Quote</a></li>
                     <li><a href="terms.html">Terms & Conditions</a></li>
                   </ul>
                 </div>
@@ -91,13 +93,13 @@ const Footer = () => {
                   <h4>Popular Services</h4>
                 </div>
                 <ul className="list-area">
-                  <li><a href="service-details.html">Packing Services</a></li>
-                  <li><a href="service-details.html">Unpacking Services</a></li>
-                  <li><a href="service-details.html">Loading Services</a></li>
-                  <li><a href="service-details.html">Unloading Services</a></li>
-                  <li><a href="service-details.html">Furniture Assembly</a></li>
-                  <li><a href="service-details.html">Vehicle Transport</a></li>
-                  <li><a href="service-details.html">Specialty Moves</a></li>
+                  <li><a href="/packing-services.html">Packing Services</a></li>
+                  <li><a href="/unpacking-services.html">Unpacking Services</a></li>
+                  <li><a href="/loading-services.html">Loading Services</a></li>
+                  <li><a href="/unloading-services.html">Unloading Services</a></li>
+                  <li><a href="/furniture-assembly.html">Furniture Assembly</a></li>
+                  <li><a href="/vehicle-transport.html">Vehicle Transport</a></li>
+                  <li><a href="/specialty-moves.html">Specialty Moves</a></li>
                 </ul>
               </div>
             </div>
