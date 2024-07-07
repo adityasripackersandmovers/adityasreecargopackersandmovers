@@ -34,34 +34,45 @@ import UnloadingServices from './pages/services/UnloadingServices.jsx';
 import UnpackingServices from './pages/services/UnpackingServices.jsx';
 import VehicleTransport from './pages/services/VehicleTransport.jsx';
 
+import CityService from './components/CityService';
+import cities from './data/cities';
+
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
   <Router>
-    <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about.html" element={<About />} />
-          <Route path="/services.html" element={<Services />} />
-          <Route path="/why-us.html" element={<Whyuspage />} />
-          <Route path="/contact.html" element={<Contact />} />
-          <Route path="/team.html" element={<Teampage />} />
-          <Route path="/faq.html" element={<FaqPage />} />
-          <Route path ="/residential-moving.html" element ={<ResidentialMoving/>} />
-          <Route path ="/commercial-moving.html" element ={<CommercialMoving/>} />
-          <Route path ="/transport-services.html" element ={<TransportServices/>} />
-          <Route path ="/residential-moving.html" element ={<ResidentialMoving/>} />
-
-          <Route path ="/furniture-assembly.html" element ={<FurnitureAssembly/>} />
-          <Route path ="/loading-services.html" element ={<LoadingServices/>} />
-          <Route path ="/packing-services.html" element ={<PackingServices/>} />
-          <Route path ="/specialty-moves.html" element ={<SpecialtyMoves/>} />
-          <Route path ="/unloading-services.html" element ={<UnloadingServices/>} />
-          <Route path ="/unpacking-services.html" element ={<UnpackingServices/>} />
-          <Route path ="/vehicle-transport.html" element ={<VehicleTransport/>} />
-
-        </Route>
-    </Routes>
-  </Router>
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="/about.html" element={<About />} />
+      <Route path="/services.html" element={<Services />} />
+      <Route path="/why-us.html" element={<Whyuspage />} />
+      <Route path="/contact.html" element={<Contact />} />
+      <Route path="/team.html" element={<Teampage />} />
+      <Route path="/faq.html" element={<FaqPage />} />
+      <Route path="/residential-moving.html" element={<ResidentialMoving />} />
+      <Route path="/commercial-moving.html" element={<CommercialMoving />} />
+      <Route path="/transport-services.html" element={<TransportServices />} />
+      <Route path="/furniture-assembly.html" element={<FurnitureAssembly />} />
+      <Route path="/loading-services.html" element={<LoadingServices />} />
+      <Route path="/packing-services.html" element={<PackingServices />} />
+      <Route path="/specialty-moves.html" element={<SpecialtyMoves />} />
+      <Route path="/unloading-services.html" element={<UnloadingServices />} />
+      <Route path="/unpacking-services.html" element={<UnpackingServices />} />
+      <Route path="/vehicle-transport.html" element={<VehicleTransport />} />
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/packers-and-movers-in-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<CityService city={city} />}
+          />
+        );
+      })}
+    </Route>
+  </Routes>
+</Router>
 );
