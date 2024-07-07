@@ -20,6 +20,9 @@ import Home from './pages/Homepage.jsx';
 import About from './pages/Aboutpage.jsx';
 import Services from './pages/Servicespage.jsx';
 import Contact from './pages/Contactpage.jsx';
+import Whyuspage from './pages/Whyuspage.jsx';
+import Teampage from './pages/Teampage.jsx';
+import FaqPage from './pages/Faqpage.jsx';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -31,7 +34,10 @@ root.render(
           <Route index element={<Home />} />
           <Route path="/about.html" element={<About />} />
           <Route path="/services.html" element={<Services />} />
+          <Route path="/why-us.html" element={<Whyuspage />} />
           <Route path="/contact.html" element={<Contact />} />
+          <Route path="/team.html" element={<Teampage />} />
+          <Route path="/faq.html" element={<FaqPage />} />
         </Route>
     </Routes>
   </Router>

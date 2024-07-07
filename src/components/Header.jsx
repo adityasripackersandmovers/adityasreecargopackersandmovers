@@ -44,20 +44,22 @@ const Header = () => {
                         <a href="/">Home</a>
                       </li>
                       <li>
-                        <a href="about.html">About</a>
+                        <a href="/about.html">About</a>
                       </li>
                       <li>
-                        <a href="services.html">Services</a>
+                        <a href="/services.html">Services</a>
                       </li>
                       <li>
-                        <a href="why-us.html">Why Us</a>
+                        <a href="/why-us.html">Why Us</a>
                       </li>
                       <li>
                         <a href="contact.html">Contact</a>
                       </li>
+                     {/* 
                       <li>
                       <button className="close-menu" onClick={closeMenu}>Close X</button>
                       </li>
+                      */}
                     </ul>
                   </nav>
                   
