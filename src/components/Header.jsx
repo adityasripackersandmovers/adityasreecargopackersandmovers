@@ -32,7 +32,7 @@ const Header = () => {
           <div className="header-main style-2">
             <div className="header-left">
               <div className="logo">
-                <a href="index.html" className="header-logo">
+                <a href="/" className="header-logo">
                   <img src={logo} alt="logo-img" />
                 </a>
               </div>
