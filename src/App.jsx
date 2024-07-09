@@ -2,12 +2,16 @@ import React,{ useState, useEffect } from 'react'
 import './App.css'
 import Preloader from './components/Preloader'
 import Error from './components/Error'
-
+import Faq from './components/Faq'
 import Hero from './components/Hero'
 import PromoSection from './components/PromoSection'
 import About from './components/About'
 import Feature from './components/Feature'
 import Team from './components/Team'
+import Testimonials from './components/Testimonials'
+import ServiceAreas from './components/ServiceAreas'
+import ServicesList from './components/ServicesList'
+import Map from './components/Map'
 
 function App() {
   const [loading, setLoading] = useState(true);
