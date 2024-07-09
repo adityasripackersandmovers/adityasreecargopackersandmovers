@@ -133,6 +133,9 @@ Main Style file-> assets/css/main.css
         .cmenu{
           display: block;
         }
+        .mobile-menu{
+          display: none;
+        }
   }
   
   @media (max-width: 600px) {
@@ -189,6 +192,9 @@ Main Style file-> assets/css/main.css
     }
     .cmenu{
       display: block;
+    }
+    .mobile-menu{
+      display: none;
     }
   }
 
