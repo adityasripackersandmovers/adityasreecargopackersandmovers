@@ -11,7 +11,7 @@ import ServicesList from '../components/ServicesList'
 import Map from '../components/Map'
 import Footer from '../components/Footer';
 import MiniFooter from '../components/MiniFooter'
-
+import ChatWidget from '../components/ChatWidget/ChatWidget';
 const Layout = () => {
   return (
     <div className="layout">
