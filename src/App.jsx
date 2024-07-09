@@ -37,7 +37,7 @@ function App() {
           <Services />
           <Counter />
           <Feature />
-          <Team />
+          {/* <Team /> */}
           <Faq />
           <ServiceAreas />
           <ServicesList />

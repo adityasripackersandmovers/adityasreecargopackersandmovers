@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { FaQuestionCircle, FaClock } from 'react-icons/fa';
-import faq from '../assets/img/faq/faq1.jpg'
+import fa1 from '../assets/img/faq/fa1.jpeg'
+import fa2 from '../assets/img/faq/fa2.jpeg'
+import fa3 from '../assets/img/faq/fa3.jpeg'
+import fa4 from '../assets/img/faq/fa4.jpeg'
 /*
 import bootstrapcss from '../assets/css/bootstrap.min.css'
 import bootstrapjs from '../assets/js/bootstrap.bundle.min.js'
@@ -118,22 +121,22 @@ const Faq = () => {
               <div className="row g-4">
                 <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                   <div className="faq-image">
-                    <img src={faq} alt="img" />
+                    <img src={fa1} alt="img" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                   <div className="faq-image">
-                    <img src={faq} alt="img" />
+                    <img src={fa2} alt="img" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                   <div className="faq-image">
-                    <img src={faq} alt="img" />
+                    <img src={fa3} alt="img" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                   <div className="faq-image">
-                    <img src={faq} alt="img" />
+                    <img src={fa4} alt="img" />
                   </div>
                 </div>
               </div>
