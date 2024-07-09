@@ -6,7 +6,7 @@ const Packersandmoversnearme = ({ city }) => {
   
     return (
       <div className="city-service">
-       <h2>Welcome to Aditya Sri Cargo Packers and Movers nearme In {city}</h2>
+          <h2>Welcome to Aditya Sri Cargo Packers and Movers nearme In {city}</h2>
                 <p>Welcome to Aditya Sri Cargo Packers and Movers nearme in {city}, 
                   your one-stop destination for reliable and efficient packing and moving services. 
                   Moving can be a daunting task, but with Aditya Sri Cargo Packers and Movers nearme in {city}, 

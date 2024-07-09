@@ -100,6 +100,8 @@ const cities = [
   "muddanur",
   "rayadurg",
   "pileru",
+  "piler",
+  "kalikiri",
   "banaganapalle",
   "kanigiri",
   "naidupet",

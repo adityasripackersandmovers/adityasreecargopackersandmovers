@@ -27,7 +27,7 @@ const Testimonials = () => {
                 "The team was professional and efficient. They handled my belongings with care and made the moving process stress-free. Highly recommend!"
               </p>
               <div className="client-info">
-                <div className="client-img bg-cover" style={{ backgroundImage: "url('assets/img/testimonial/client-1.png')" }}></div>
+               {/*  <div className="client-img bg-cover" style={{ backgroundImage: "url('assets/img/testimonial/client-1.png')" }}></div> */}
                 <div className="content">
                   <h4>Shikhon Islam</h4>
                   <span>Web Designer</span>

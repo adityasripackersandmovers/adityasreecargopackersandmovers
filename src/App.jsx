@@ -28,7 +28,12 @@ function App() {
           <PromoSection />
           <About />
           <Feature />
-          <Team />
+          {/* <Team /> */}
+          <Faq />
+          <ServiceAreas />
+          <ServicesList />
+          <Testimonials />
+          <Map />
           {/* Other components go here */}
         </>
       )}
