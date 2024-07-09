@@ -55,6 +55,7 @@ root.render(
   <Routes>
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
+      <Route path="/index.html" element={<Home />} />
       <Route path="/about.html" element={<About />} />
       <Route path="/services.html" element={<Services />} />
       <Route path="/why-us.html" element={<Whyuspage />} />
