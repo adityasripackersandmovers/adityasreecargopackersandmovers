@@ -39,6 +39,7 @@ import cities from './data/cities';
 
 import Packersandmovers from './pages/SEO/Packersandmovers.jsx';
 import Packersandmoversnearme from './pages/SEO/Packersandmoversnearme.jsx';
+import Packersandmoversnearmein from './pages/SEO/Packersandmoversnearmein.jsx';
 import Localpackersandmovers from './pages/SEO/Localpackersandmovers.jsx';
 import Localpackersandmoversin from './pages/SEO/Localpackersandmoversin.jsx';
 import Professionalpackersandmovers from './pages/SEO/Professionalpackersandmovers.jsx';
@@ -102,6 +103,17 @@ root.render(
             key={city}
             path={path}
             element={<Packersandmoversnearme city={city} />}
+          />
+        );
+      })}
+      {cities.map(city => {
+        const formattedCity = city.toLowerCase().replace(/ /g, '-');
+        const path = `/packers-and-movers-nearme-in-${formattedCity}.html`;
+        return (
+          <Route
+            key={city}
+            path={path}
+            element={<Packersandmoversnearmein city={city} />}
           />
         );
       })}

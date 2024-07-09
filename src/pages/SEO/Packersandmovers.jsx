@@ -7,10 +7,10 @@ const Packersandmovers = ({ city }) => {
   
     return (
       <div className="city-service">
-          <h2>Welcome to Aditya Sri Cargo Packers and Movers In {city}</h2>
-                <p>Welcome to Aditya Sri Cargo Packers and Movers in {city}, 
+          <h2>Welcome to Aditya Sri Cargo Packers and Movers {city}</h2>
+                <p>Welcome to Aditya Sri Cargo Packers and Movers {city}, 
                   your one-stop destination for reliable and efficient packing and moving services. 
-                  Moving can be a daunting task, but with Aditya Sri Cargo Packers and Movers in {city}, 
+                  Moving can be a daunting task, but with Aditya Sri Cargo Packers and Movers {city}, 
                   you can rest assured that your belongings are in safe hands. We are a team of experienced 
                   professionals who take pride in delivering the highest quality of service to our clients.
                 </p>
@@ -19,18 +19,18 @@ const Packersandmovers = ({ city }) => {
                   loading, transportation, unloading, and unpacking, all done with the utmost care and attention 
                   to detail. We understand that moving can be a daunting task, especially when you have to pack 
                   and move all your belongings to a new place. Finding reliable and professional packers and movers in {city} 
-                  can be a challenge, but we are here to help. At Aditya Sri Cargo Packers and Movers in {city}, 
+                  can be a challenge, but we are here to help. At Aditya Sri Cargo Packers and Movers {city}, 
                   we offer the packers and movers services in {city}. Our team of experienced professionals is 
                   dedicated to providing you with a hassle-free moving experience, so you can focus on settling into 
                   your new home.</p>
                 <p>Our fleet of vehicles is well-maintained and equipped with the latest technology to ensure a 
                   smooth and hassle-free move. We use high-quality packing materials to safeguard your belongings 
                   during transit, and our team of experts ensures that everything is handled with care.</p>
-                <p>At Aditya Sri Cargo Packers and Movers in {city}, we believe in transparency and integrity, 
+                <p>At Aditya Sri Cargo Packers and Movers {city}, we believe in transparency and integrity, 
                   and our pricing is always upfront and competitive. Our goal is to provide you with a stress-free 
                   moving experience, and we go above and beyond to ensure that everything is done to your 
                   satisfaction.</p>
-                <p>Thank you for choosing Aditya Sri Cargo Packers and Movers in {city}. We look forward to 
+                <p>Thank you for choosing Aditya Sri Cargo Packers and Movers {city}. We look forward to 
                   serving you and making your move a success.</p>
 
                 <h3>CHECK OUR SERVICES</h3>
