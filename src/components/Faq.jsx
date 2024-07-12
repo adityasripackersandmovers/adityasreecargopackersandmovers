@@ -59,12 +59,12 @@ const Faq = () => {
                         aria-expanded="false"
                         aria-controls="faq1"
                       >
-                        How To Schedule A Move?
+                        What services do Aditya Sree Cargo Packers and Movers provide?
                       </button>
                     </h4>
                     <div id="faq1" className="accordion-collapse collapse" data-bs-parent="#accordion">
                       <div className="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                      Aditya Sree Cargo Packers and Movers offer a range of services including packing and unpacking, loading and unloading, transportation, car and bike transportation, office relocation, and warehousing services.
                       </div>
                     </div>
                   </div>
@@ -78,12 +78,12 @@ const Faq = () => {
                         aria-expanded="true"
                         aria-controls="faq2"
                       >
-                        What Services Do You Offer?
+                        How are the packing materials chosen for my belongings?
                       </button>
                     </h4>
                     <div id="faq2" className="accordion-collapse collapse show" data-bs-parent="#accordion">
                       <div className="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                      We use high-quality packing materials such as bubble wrap, corrugated boxes, packing tape, and specialized cartons to ensure the safety of your belongings during transit. Our team assesses your items and selects the appropriate materials to provide maximum protection.
                       </div>
                     </div>
                   </div>
@@ -97,12 +97,69 @@ const Faq = () => {
                         aria-expanded="false"
                         aria-controls="faq3"
                       >
-                        How To Ensure The Safety Of My Belongings?
+                        How much will it cost to move my household items?
                       </button>
                     </h4>
                     <div id="faq3" className="accordion-collapse collapse" data-bs-parent="#accordion">
                       <div className="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                      The cost of moving your household items depends on various factors such as the volume of goods, the distance between the origin and destination, the type of packing materials used, and any additional services required. We provide a detailed quotation after an initial survey.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item wow fadeInUp" data-wow-delay=".7s">
+                    <h4 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq4"
+                        aria-expanded="false"
+                        aria-controls="faq4"
+                      >
+                        How long will it take to move my belongings?
+                      </button>
+                    </h4>
+                    <div id="faq4" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                      <div className="accordion-body">
+                      The duration of the move depends on the distance and the volume of goods. Local moves usually take 1-2 days, while long-distance moves can take several days. We provide an estimated timeline after assessing your requirements.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item wow fadeInUp" data-wow-delay=".7s">
+                    <h4 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq5"
+                        aria-expanded="false"
+                        aria-controls="faq5"
+                      >
+                        How can I schedule a move with Aditya Sree Cargo Packers and Movers?
+                      </button>
+                    </h4>
+                    <div id="faq5" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                      <div className="accordion-body">
+                      You can schedule a move by contacting us via phone, email, or through our website. Our team will arrange a survey, provide a quotation, and finalize the moving date based on your convenience
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item wow fadeInUp" data-wow-delay=".7s">
+                    <h4 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq6"
+                        aria-expanded="false"
+                        aria-controls="faq6"
+                      >
+                        Can you help with the disassembly and reassembly of furniture?
+                      </button>
+                    </h4>
+                    <div id="faq6" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                      <div className="accordion-body">
+                      Yes, our experienced team can assist with the disassembly and reassembly of furniture. We ensure that your furniture is carefully handled and securely reassembled at your new location.
                       </div>
                     </div>
                   </div>
