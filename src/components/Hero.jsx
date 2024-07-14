@@ -34,16 +34,17 @@ const Hero = () => {
         <div className="row g-4 align-items-center justify-content-between">
           <div className="col-xl-7 col-lg-6">
             <div className="hero-content">
-              <h5 className="wow fadeInUp">Reliable Moving Services</h5>
+              <h5 className="wow fadeInUp">We’re Here To Make Your Move Easy with Reliable Moving Services</h5>
               <h1 className="wow fadeInUp" data-wow-delay=".3s">
-                We’re Here To Make Your Move Easy
+               Aditya Sri Cargo Packers and Movers <br/>
               </h1>
               <div className="hero-button">
-                <a href="causes.html" className="theme-btn wow fadeInUp" data-wow-delay=".5s">View Services</a>
-                <a href="donation-details.html" className="theme-btn transparent-btn wow fadeInUp" data-wow-delay=".7s">Get A Quote</a>
+                <a href="tel:+91-7092826603" className="theme-btn transparent-btn wow fadeInUp addhero" data-wow-delay=".5s">Call Us at +91-7092826603 </a>
+                <a href="https://api.whatsapp.com/send/?phone=917092826603" className="theme-btn transparent-btn wow fadeInUp" data-wow-delay=".7s">WhatsApp</a>
               </div>
             </div>
           </div>
+          {/*  
           <div className="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay=".4s">
             <div className="hero-form">
               <div className="hero-title">
@@ -75,6 +76,7 @@ const Hero = () => {
               </form>              
             </div>
           </div>
+          */}
         </div>
       </div>
     </section>
