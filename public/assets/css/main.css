@@ -65,7 +65,7 @@ Version: 1.1.0
   width: 100%;
 }
 .theme-btn.transparent-btn {
-  background-color: transparent;
+  background-color: #F54D43 !important ;
   border: 2px solid rgba(255, 255, 255, 0.2);
   padding: 19.5px 45px;
 }
