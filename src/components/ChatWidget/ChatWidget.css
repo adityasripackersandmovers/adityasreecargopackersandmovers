@@ -3,8 +3,9 @@ body {
 }
 
 .chat-widget {
+    z-index: 10;
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 20px;
     width: 300px;
     background-color: #fff;
@@ -98,6 +99,7 @@ body {
 }
 
 .contact-us {
+    z-index: 10;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -107,8 +109,8 @@ body {
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 50%;
-    width: 60px;
+    border-radius: 15%;
+    width: 200px;
     height: 60px;
     font-size: 20px;
     cursor: pointer;
