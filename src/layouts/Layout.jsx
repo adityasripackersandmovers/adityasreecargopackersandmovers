@@ -15,11 +15,13 @@ import ChatWidget from '../components/ChatWidget/ChatWidget';
 const Layout = () => {
   return (
     <div className="layout">
-      <MinNavbar />
+    {/*   <MinNavbar />
       <Header />
+      */}
       <main>
         <Outlet />
       </main>
+      {/* 
       <Services />
       <Counter />
       <Faq />
@@ -30,6 +32,7 @@ const Layout = () => {
       <Footer />
       <MiniFooter />
       <ChatWidget />
+      */}
     </div>
   )
 }
